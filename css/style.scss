@@ -138,6 +138,9 @@ section.our-creations {
     }
 
     div.creations {
+      &.desktop {
+        display: none;
+      }
       div.creation {
         position: relative;
         margin-bottom: 20px;
@@ -211,7 +214,7 @@ footer {
     display: none !important;
   }
   .hide-mobile {
-    display: block !important;
+    display: block;
   }
   div.container {
     width: 1000px;

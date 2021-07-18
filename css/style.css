@@ -149,6 +149,10 @@ section.our-creations div.container h1 {
   font-family: "Josefin Sans", sans-serif;
 }
 
+section.our-creations div.container div.creations.desktop {
+  display: none;
+}
+
 section.our-creations div.container div.creations div.creation {
   position: relative;
   margin-bottom: 20px;
@@ -227,7 +231,7 @@ footer section.social div.copyright {
     display: none !important;
   }
   .hide-mobile {
-    display: block !important;
+    display: block;
   }
   div.container {
     width: 1000px;
