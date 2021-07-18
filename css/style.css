@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+  color: dimgray;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+header.header {
+  background: url(../assets/mobile/image-hero.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 20px;
+}
+
+header.header div.container nav.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header.header div.container nav.navigation img.logo {
+  width: 120px;
+}
+
+header.header div.container h1.intro-text {
+  color: white;
+  margin-top: 130px;
+  text-transform: uppercase;
+  padding: 20px;
+  border: 2px solid white;
+  font-size: 45px;
+  font-weight: lighter;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header.header div.container div.mobile-navigation {
+  position: fixed;
+  height: 100vh;
+  z-index: 40;
+  width: 100vw;
+  background: black;
+  top: 0;
+  left: 0;
+  padding: 50px 30px;
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header.header div.container div.mobile-navigation.open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+header.header div.container div.mobile-navigation.close {
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+}
+
+header.header div.container div.mobile-navigation div.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0;
+  margin-bottom: 120px;
+}
+
+header.header div.container div.mobile-navigation ul.nav li {
+  padding-bottom: 15px;
+}
+
+header.header div.container div.mobile-navigation ul.nav li a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: lighter;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+section.vr-history {
+  padding: 70px 30px;
+}
+
+section.vr-history div.container div.writeup {
+  text-align: center;
+  padding: 20px;
+}
+
+section.vr-history div.container div.writeup h1 {
+  padding: 20px 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 32px;
+}
+
+section.vr-history div.container div.writeup p {
+  line-height: 30px;
+}
+
+section.our-creations {
+  padding: 30px;
+}
+
+section.our-creations div.container h1 {
+  padding-bottom: 60px;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+section.our-creations div.container div.creations div.creation {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+section.our-creations div.container div.creations div.creation h2 {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  z-index: 10;
+  bottom: 20px;
+  left: 20px;
+  width: 120px;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+section.our-creations div.container button.see-all {
+  padding: 12px 50px;
+  background: transparent;
+  border: 2px solid dimgray;
+  color: dimgray;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 40px auto;
+}
+
+footer {
+  background: black;
+  padding: 40px 20px;
+}
+
+footer section.links {
+  text-align: center;
+}
+
+footer section.links img.lg {
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+footer section.links ul li {
+  padding: 15px 0;
+}
+
+footer section.links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer section.social {
+  margin-top: 20px;
+}
+
+footer section.social div.social {
+  text-align: center;
+}
+
+footer section.social div.social img {
+  width: 20px;
+}
+
+footer section.social div.social a {
+  margin: 0 10px;
+}
+
+footer section.social div.copyright {
+  color: #8c8c8c;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1000px) {
+  .hide-desktop {
+    display: none !important;
+  }
+  div.container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  header.header {
+    background: url(../assets/desktop/image-hero.jpg);
+    background-position: center;
+  }
+  header.header div.container nav.navigation img.logo {
+    width: 150px;
+  }
+  header.header div.container h1.intro-text {
+    display: inline-block;
+    width: 500px;
+    font-size: 60px;
+  }
+  header.header ul.desktop-nav li {
+    display: inline;
+    padding: 0 15px;
+  }
+  header.header ul.desktop-nav li a {
+    color: #fff;
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+  section.vr-history div.container {
+    position: relative;
+  }
+  section.vr-history div.container img.vr-image {
+    position: relative;
+  }
+  section.vr-history div.container div.writeup {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    right: 0;
+    width: 400px;
+  }
+  section.our-creations div.container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "h1el see-all" "gd gd";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.our-creations div.container h1.cr {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: h1el;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  section.our-creations div.container button.see-all {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: see-all;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin: 0;
+  }
+  section.our-creations div.container div.creations {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: gd;
+    margin-top: 50px;
+  }
+  section.our-creations div.container div.creations.mobile {
+    display: none;
+  }
+  section.our-creations div.container div.creations.desktop {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  section.our-creations div.container div.creations.desktop div.creation {
+    margin-bottom: 10px;
+  }
+  footer div.container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div.container section.links ul li {
+    display: inline;
+    padding: 0 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
