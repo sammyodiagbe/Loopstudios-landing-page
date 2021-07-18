@@ -53,6 +53,10 @@ header.header {
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      img.burger,
+      img#burger {
+        display: block;
+      }
       img.logo {
         width: 120px;
       }
@@ -225,7 +229,8 @@ footer {
     background-position: center;
     div.container {
       nav.navigation {
-        img.burger {
+        img.burger,
+        img#burger {
           display: none !important;
         }
         img.logo {

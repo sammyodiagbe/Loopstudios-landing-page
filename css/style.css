@@ -56,6 +56,11 @@ header.header div.container nav.navigation {
   width: 100%;
 }
 
+header.header div.container nav.navigation img.burger,
+header.header div.container nav.navigation img#burger {
+  display: block;
+}
+
 header.header div.container nav.navigation img.logo {
   width: 120px;
 }
@@ -241,7 +246,8 @@ footer section.social div.copyright {
     background: url(../assets/desktop/image-hero.jpg);
     background-position: center;
   }
-  header.header div.container nav.navigation img.burger {
+  header.header div.container nav.navigation img.burger,
+  header.header div.container nav.navigation img#burger {
     display: none !important;
   }
   header.header div.container nav.navigation img.logo {
