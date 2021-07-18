@@ -303,8 +303,8 @@ footer section.social div.copyright {
     display: none;
   }
   section.our-creations div.container div.creations.desktop {
-    display: -ms-grid;
-    display: grid;
+    display: -ms-grid !important;
+    display: grid !important;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
