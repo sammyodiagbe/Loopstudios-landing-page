@@ -37,6 +37,9 @@ li {
 .hide-mobile {
   display: none;
 }
+.hide-desktop {
+  display: none;
+}
 
 header.header {
   background: url(../assets/mobile/image-hero.jpg);
@@ -206,6 +209,9 @@ footer {
 @media screen and (min-width: 1000px) {
   .hide-desktop {
     display: none !important;
+  }
+  .hide-mobile {
+    display: block;
   }
   div.container {
     width: 1000px;
