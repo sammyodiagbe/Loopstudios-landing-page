@@ -241,6 +241,9 @@ footer section.social div.copyright {
     background: url(../assets/desktop/image-hero.jpg);
     background-position: center;
   }
+  header.header div.container nav.navigation img.burger {
+    display: none;
+  }
   header.header div.container nav.navigation img.logo {
     width: 150px;
   }
