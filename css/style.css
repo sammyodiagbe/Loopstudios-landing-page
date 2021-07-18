@@ -227,7 +227,7 @@ footer section.social div.copyright {
     display: none !important;
   }
   .hide-mobile {
-    display: block;
+    display: block !important;
   }
   div.container {
     width: 1000px;
