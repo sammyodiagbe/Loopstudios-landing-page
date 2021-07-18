@@ -226,7 +226,7 @@ footer {
     div.container {
       nav.navigation {
         img.burger {
-          display: none;
+          display: none !important;
         }
         img.logo {
           width: 150px;

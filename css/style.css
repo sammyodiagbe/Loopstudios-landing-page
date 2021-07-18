@@ -242,7 +242,7 @@ footer section.social div.copyright {
     background-position: center;
   }
   header.header div.container nav.navigation img.burger {
-    display: none;
+    display: none !important;
   }
   header.header div.container nav.navigation img.logo {
     width: 150px;
