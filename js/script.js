@@ -5,6 +5,7 @@ const closeBtn = document.querySelector("#close-btn");
 burger.addEventListener("click", () => {
   mobileNavigation.classList.remove("close");
   mobileNavigation.classList.add("open");
+  console.log(mobileNavigation);
 });
 
 closeBtn.addEventListener("click", () => {
